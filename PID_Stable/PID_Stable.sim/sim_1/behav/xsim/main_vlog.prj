@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../PID_Stable.srcs/sources_1/imports/new/derivative.v" \
+"../../../../PID_Stable.srcs/sources_1/imports/new/integral.v" \
+"../../../../PID_Stable.srcs/sources_1/imports/new/proportional.v" \
+"../../../../PID_Stable.srcs/sources_1/imports/new/main.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

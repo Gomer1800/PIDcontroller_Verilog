@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Wed Dec 05 00:17:36 UTC 2018
+VLNV: xilinx.com:ip:c_addsub:12.0
+SynthRuntime: 30
