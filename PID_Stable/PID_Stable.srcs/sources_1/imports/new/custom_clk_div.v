@@ -24,7 +24,7 @@
 module custom_clk_div (  input clk,
                   output sclk);
 
-  integer MAX_COUNT = 100000; 
+  integer MAX_COUNT = 100000000; 
   integer div_cnt =0;
   reg tmp_clk=0; 
 
