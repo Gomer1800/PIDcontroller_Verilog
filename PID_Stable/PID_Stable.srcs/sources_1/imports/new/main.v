@@ -33,12 +33,12 @@ module main(
     custom_clk_div myClock(CLOCK, customClock);
     
     // Display module
-     main_8b displayModule(CLOCK, customClock, btnC, setPoint, processOutput [7:0], an, seg);
+    main_8b displayModule(CLOCK, customClock, btnC, setPoint, processOutput [7:0], an, seg);
      
     // PID modules
         // Compute Error
     wire [7:0] error;
-    c_addsub_3 computeError(setPoint [7:0], processOutput [11:3], customClock, 1'b1, error [7:0]);
+    c_addsub_3 computeError(setPoint [7:0], {processOutput [11],processOutput[6:0]}, customClock, 1'b1, error [7:0]);
         // Proportional term
     wire [11:0] p;
     proportional pm(error [7:0], customClock, p[11:0]);
@@ -52,11 +52,9 @@ module main(
     wire [11:0] processOutput;
     wire [11:0] partial2;
     wire [11:0] sigma2;
-    c_addsub_2 add1(p [11:0], i [11:0], customClock, 1'b1, partial2 [11:0]);
-    c_addsub_2 add2(partial2 [11:0], d [11:0], customClock, 1'b1, sigma2 [11:0]);
+     // c_addsub_2 add1(p [11:0], i [11:0], customClock, 1'b1, partial2 [11:0]);
+     //c_addsub_2 add2(partial2 [11:0], d [11:0], customClock, 1'b1, sigma2 [11:0]);
         // Compute Process Output
-    c_addsub_2 computeResult(sigma2 [11:0], processOutput [11:0], customClock, 1'b1, processOutput [11:0]);
+    c_addsub_2 computeResult(p [11:0], processOutput [11:0], customClock, 1'b1, processOutput [11:0]);
     // end of PID module
-    
-    
 endmodule

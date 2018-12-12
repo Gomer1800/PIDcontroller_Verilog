@@ -12,7 +12,7 @@ module main_8b(
 
     reg [7:0] display;
     
-    sseg_dec displaySeg( display[6:0], display[7], customClock, CLOCK, DIGITS, DISPLAY);
+    sseg_dec displaySeg( display[7:0], display[7], customClock, CLOCK, DIGITS, DISPLAY);
     
 always @ (posedge customClock) begin
     case (BUTTON)

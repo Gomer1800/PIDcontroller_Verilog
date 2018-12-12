@@ -18,13 +18,18 @@
 //-- 4 digit seven-segment display driver. Outputs are active
 //-- low and configured ABCEDFG in "segment" output. 
 //--------------------------------------------------------------
-module sseg_dec( input [6:0] ALU_VAL, 
+module sseg_dec( input [7:0] ALU_VAL, 
 				 input SIGN,
 				 input VALID,
                  input CLK,
                  output [3:0] DISP_EN,
                  output [7:0] SEGMENTS);
   
+   // 2s complement
+   wire [7:0] twosComplement;
+   wire [7:0] in;
+   c_addsub_0 twosC(~ALU_VAL, 8'h01, CLK, 1'b1, twosComplement);
+   assign in = (SIGN == 1) ? twosComplement: ALU_VAL;
    // intermediate signal declaration -----------------------
    reg   [1:0] cnt_dig; 
    reg   [3:0] digit; 
@@ -33,31 +38,30 @@ module sseg_dec( input [6:0] ALU_VAL,
    wire   sclk; 
 
    // instantiation of bin to bcd converter -----------------
-    bin2bcdconv my_conv( .BIN_CNT_IN(ALU_VAL), 
+    bin2bcdconv my_conv( .BIN_CNT_IN(in), 
                          .LSD_OUT(lsd), 
                          .MSD_OUT(msd), 
                          .MMSD_OUT(mmsd)); 
 
    clk_div my_clk( .clk(CLK),
 	               .sclk(sclk) ); 
-
+	              
    // advance the count (used for display multiplexing) -----
    always @ (posedge sclk)
    begin
          cnt_dig <= cnt_dig + 1; 
    end
-
    // select the display sseg data abcdefg (active low) -----
    assign SEGMENTS = (digit==0)? 8'b00000011:
-               (digit==1)?8'b10011111:
-               (digit==2)?8'b00100101:
-               (digit==3)?8'b00001101:
-               (digit==4)?8'b10011001:
-               (digit==5)?8'b01001001:
-               (digit==6)?8'b01000001:
-               (digit==7)?8'b00011111:
-               (digit==8)?8'b00000001:
-               (digit==9)?8'b00001001:
+               (digit==1)? 8'b10011111:
+               (digit==2)? 8'b00100101:
+               (digit==3)? 8'b00001101:
+               (digit==4)? 8'b10011001:
+               (digit==5)? 8'b01001001:
+               (digit==6)? 8'b01000001:
+               (digit==7)? 8'b00011111:
+               (digit==8)? 8'b00000001:
+               (digit==9)? 8'b00001001:
 			   (digit==4'hE)?8'b11111101:   // dash
 			   (digit==4'hF)?8'b11111111:   // blank
                8'b11111111; 
@@ -104,7 +108,6 @@ module sseg_dec( input [6:0] ALU_VAL,
 	end
 			
 endmodule
-
 //--------------------------------------------------------------------
 //-- interface description for bin to bcd converter 
 //--------------------------------------------------------------------
