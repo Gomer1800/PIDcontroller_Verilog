@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Wed Dec  5 16:50:21 2018
+| Date         : Thu Dec  6 17:05:57 2018
 | Host         : LAPTOP-OG4VTB3M running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
 | Design       : main
@@ -35,8 +35,7 @@ Table of Contents
 | Fanout | Control Sets |
 +--------+--------------+
 |      4 |            1 |
-|      8 |            1 |
-|    16+ |            3 |
+|    16+ |            4 |
 +--------+--------------+
 
 
@@ -46,7 +45,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             252 |           33 |
+| No           | No                    | No                     |             108 |           15 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |             124 |           16 |
 | Yes          | No                    | No                     |               0 |            0 |
@@ -62,10 +61,10 @@ Table of Contents
 |             Clock Signal             | Enable Signal |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
 +--------------------------------------+---------------+-----------------------------------------+------------------+----------------+
 |  displayModule/displaySeg/my_clk/CLK |               |                                         |                1 |              4 |
-|  CLOCK_IBUF_BUFG                     |               |                                         |                2 |              8 |
-|  CLOCK_IBUF_BUFG                     |               | displayModule/displaySeg/my_clk/tmp_clk |                8 |             62 |
+|  CLOCK_IBUF_BUFG                     |               |                                         |                4 |             24 |
 |  CLOCK_IBUF_BUFG                     |               | myClock/tmp_clk                         |                8 |             62 |
-|  customClock_BUFG                    |               |                                         |               30 |            240 |
+|  CLOCK_IBUF_BUFG                     |               | displayModule/displaySeg/my_clk/tmp_clk |                8 |             62 |
+|  customClock_BUFG                    |               |                                         |               10 |             80 |
 +--------------------------------------+---------------+-----------------------------------------+------------------+----------------+
 
 
