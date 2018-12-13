@@ -3,5 +3,8 @@
 
 # XDC: imports/PID_Stable/Basys3_constraints.xdc
 
-# IP: ip/c_addsub_3/c_addsub_3.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==c_addsub_3 || ORIG_REF_NAME==c_addsub_3} -quiet] -quiet
+# IP: ip/addsub_8b_8b/addsub_8b_8b.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==addsub_8b_8b || ORIG_REF_NAME==addsub_8b_8b} -quiet] -quiet
+
+# IP: ip/sub_8b_8b/sub_8b_8b.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==sub_8b_8b || ORIG_REF_NAME==sub_8b_8b} -quiet] -quiet

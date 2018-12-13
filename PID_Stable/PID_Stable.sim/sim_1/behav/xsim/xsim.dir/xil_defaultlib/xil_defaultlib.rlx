@@ -3,11 +3,14 @@
 Jun 14 2018
 20:41:02
 C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/lab7 FSM_Counter/sseg_dec.v,1544661992,verilog,,C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/main.v,,bin2bcdconv;clk_div;sseg_dec,,,,,,,,
+C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/custom_clk_div.v,1544662852,verilog,,C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/main_8b.v,,custom_clk_div,,,,,,,,
 C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/derivative.v,1543993205,verilog,,C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/integral.v,,derivative,,,,,,,,
 C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/integral.v,1543993200,verilog,,C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/proportional.v,,integral,,,,,,,,
-C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/main.v,1543992983,verilog,,,,main,,,,,,,,
-C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/proportional.v,1543989243,verilog,,C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/main.v,,proportional,,,,,,,,
+C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/main.v,1544663114,verilog,,,,main,,,,,,,,
+C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/main_8b.v,1544136080,verilog,,C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/proportional.v,,main_8b,,,,,,,,
+C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/proportional.v,1544662403,verilog,,C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/lab7 FSM_Counter/sseg_dec.v,,proportional,,,,,,,,
+C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/addsub_8b_8b/sim/addsub_8b_8b.vhd,1544661518,vhdl,,,,addsub_8b_8b,,,,,,,,
 C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd,1543992020,vhdl,,,,c_addsub_0,,,,,,,,
-C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/c_addsub_2/sim/c_addsub_2.vhd,1543992153,vhdl,,,,c_addsub_2,,,,,,,,
-C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/c_addsub_3/sim/c_addsub_3.vhd,1543995665,vhdl,,,,c_addsub_3,,,,,,,,
+C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/mult_8bx1b/sim/mult_8bx1b.vhd,1544659879,vhdl,,,,mult_8bx1b,,,,,,,,
 C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd,1543992062,vhdl,,,,mult_gen_0,,,,,,,,

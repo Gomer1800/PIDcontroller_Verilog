@@ -74,10 +74,8 @@ set rc [catch {
   set_property ip_output_repo {{C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet {{C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.runs/synth_1/main.dcp}}
-  read_ip -quiet {{C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/c_addsub_3/c_addsub_3.xci}}
-  read_ip -quiet {{C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci}}
-  read_ip -quiet {{C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci}}
-  read_ip -quiet {{C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/c_addsub_2/c_addsub_2.xci}}
+  read_ip -quiet {{c:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/addsub_8b_8b/addsub_8b_8b.xci}}
+  read_ip -quiet {{c:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/sub_8b_8b/sub_8b_8b.xci}}
   read_xdc {{C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/constrs_1/imports/PID_Stable/Basys3_constraints.xdc}}
   link_design -top main -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb

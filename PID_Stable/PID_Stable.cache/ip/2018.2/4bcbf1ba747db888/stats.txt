@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Thu Dec 13 00:12:03 UTC 2018
+VLNV: xilinx.com:ip:mult_gen:12.0
+SynthRuntime: 36

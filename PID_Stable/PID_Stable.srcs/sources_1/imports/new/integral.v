@@ -26,7 +26,7 @@ module integral(
     output [11:0] i
     );
     
-    parameter [3:0] co = 4'b0001;
+    parameter K = 1'b1;
     reg [7:0] prior = 0;
     wire [7:0] out;
     //wire [11:0] mult;
@@ -35,7 +35,4 @@ module integral(
     begin
        prior [7:0] <= out [7:0];
     end
-    mult_gen_0 m(clk, co [3:0], out [7:0], i [11:0]);
-    //assign i[11] = mult[11];
-    //assign i[8:0] = mult[10:2];
 endmodule

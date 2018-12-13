@@ -28,7 +28,9 @@ module sseg_dec( input [7:0] ALU_VAL,
    // 2s complement
    wire [7:0] twosComplement;
    wire [7:0] in;
-   c_addsub_0 twosC(~ALU_VAL, 8'h01, CLK, 1'b1, twosComplement);
+   
+   // 2s complement
+   addsub_8b_8b twosC(~ALU_VAL, 8'h01, CLK, 1'b1, twosComplement);
    assign in = (SIGN == 1) ? twosComplement: ALU_VAL;
    // intermediate signal declaration -----------------------
    reg   [1:0] cnt_dig; 

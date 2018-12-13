@@ -23,10 +23,12 @@
 module proportional(
     input [7:0] error,
     input clk,
-    output [11:0] p
+    output [7:0] p
     );
+    wire CE = 1'b1;
     
-    parameter [3:0] co = 4'b0001;
-    mult_gen_0 m(clk, co[3:0], error[7:0], p[11:0]);
+    parameter K = 1'b1;
+    mult_8bx1b Kp(clk, error[7:0], K, CE, p[7:0]);
+    
     
 endmodule

@@ -32,24 +32,15 @@ set_property ip_output_repo {c:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Veri
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   {C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/custom_clk_div.v}
-  {C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/derivative.v}
-  {C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/integral.v}
   {C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/main_8b.v}
-  {C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/proportional.v}
   {C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/lab7 FSM_Counter/sseg_dec.v}
   {C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/imports/new/main.v}
 }
-read_ip -quiet {{C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/c_addsub_3/c_addsub_3.xci}}
-set_property used_in_implementation false [get_files -all {{c:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/c_addsub_3/c_addsub_3_ooc.xdc}}]
+read_ip -quiet {{c:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/addsub_8b_8b/addsub_8b_8b.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/addsub_8b_8b/addsub_8b_8b_ooc.xdc}}]
 
-read_ip -quiet {{C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci}}
-set_property used_in_implementation false [get_files -all {{c:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/c_addsub_0/c_addsub_0_ooc.xdc}}]
-
-read_ip -quiet {{C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci}}
-set_property used_in_implementation false [get_files -all {{c:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc}}]
-
-read_ip -quiet {{C:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/c_addsub_2/c_addsub_2.xci}}
-set_property used_in_implementation false [get_files -all {{c:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/c_addsub_2/c_addsub_2_ooc.xdc}}]
+read_ip -quiet {{c:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/sub_8b_8b/sub_8b_8b.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/luisg/Desktop/Fall 2018/PIDcontroller_Verilog/PID_Stable/PID_Stable.srcs/sources_1/ip/sub_8b_8b/sub_8b_8b_ooc.xdc}}]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

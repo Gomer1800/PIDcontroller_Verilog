@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../PID_Stable.srcs/sources_1/ip/mult_8bx1b/sim/mult_8bx1b.vhd" \
+
+nosort
